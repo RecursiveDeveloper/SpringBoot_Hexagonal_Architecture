@@ -59,7 +59,10 @@ public class PersonServiceTest {
 	
 	@Test
 	public void savePerson() {
+		//Act
 		personService.savePerson(person);
+		
+		//Assert 
 		verify(personRepository).save(person);
 	}
 	
